@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wereluxe | Modern Clothing Brand</title>
+  <meta name="description" content="Wereluxe – Premium modern fashion for everyday luxury." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  <style>
+    :root { --black: #0f0f0f; --white: #ffffff; --gray: #f5f5f5; --gold: #c9a24d; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: var(--white); color: var(--black); }
+    header { position: fixed; top: 0; width: 100%; background: var(--white); border-bottom: 1px solid #eee; z-index: 1000; }
+    .nav { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; }
+    .logo { font-size: 24px; font-weight: 700; letter-spacing: 1px; } .logo span { color: var(--gold); }
+    .nav ul { display: flex; gap: 25px; list-style: none; }
+    .nav ul li a { text-decoration: none; color: var(--black); font-weight: 500; transition: 0.3s; }
+    .nav ul li a:hover { color: var(--gold); }
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; background: linear-gradient(to right, #fafafa, #f1f1f1); }
+    .hero h1 { font-size: 52px; font-weight: 700; margin-bottom: 15px; } .hero h1 span { color: var(--gold); }
+    .hero p { max-width: 600px; margin: auto; font-size: 16px; margin-bottom: 30px; color: #555; }
+    .btn { display: inline-block; padding: 14px 34px; background: var(--black); color: var(--white); text-decoration: none; font-weight: 500; border-radius: 30px; transition: 0.3s; }
+    .btn:hover { background: var(--gold); color: var(--black); }
+    section { max-width: 1200px; margin: auto; padding: 80px 20px; }
+    section h2 { font-size: 36px; margin-bottom: 40px; text-align: center; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .product { background: var(--gray); padding: 20px; border-radius: 16px; text-align: center; transition: 0.3s; }
+    .product:hover { transform: translateY(-6px); }
+    .product img { width: 100%; border-radius: 12px; margin-bottom: 15px; }
+    .product h3 { margin-bottom: 8px; } .product span { color: var(--gold); font-weight: 600; }
+    .about { text-align: center; max-width: 800px; margin: auto; color: #555; }
+    .contact { text-align: center; } .contact p { margin-bottom: 10px; color: #555; }
+    footer { background: var(--black); color: var(--white); text-align: center; padding: 25px; margin-top: 60px; } footer span { color: var(--gold); }
+    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #fff; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; }
+    .whatsapp-float i { margin-top: 15px; }
+    @media (max-width: 768px) { .hero h1 { font-size: 38px; } .nav ul { display: none; } }
+  </style></head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">Were<span>luxe</span></div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header><div class="hero" id="home">
+  <div>
+    <h1>Wear Luxury.<br><span>Wear Wereluxe</span></h1>
+    <p>Premium modern fashion designed for confidence, comfort and everyday luxury.</p>
+    <a href="#shop" class="btn">Shop Collection</a>
+  </div>
+</div><section id="shop">
+  <h2>Featured Collection</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x500" alt="Luxury T-Shirt">
+      <h3>Luxury T-Shirt</h3>
+      <span>PKR 3,999</span><br><br>
+      <select class="size" style="padding:10px;border-radius:8px;margin-bottom:10px;">
+        <option value="S">Size S</option>
+        <option value="M">Size M</option>
+        <option value="L">Size L</option>
+        <option value="XL">Size XL</option>
+      </select><br>
+      <a href="#" class="btn order-btn" data-product="Luxury T-Shirt">Order on WhatsApp</a>
+    </div><div class="product">
+  <img src="https://via.placeholder.com/400x500" alt="Premium Hoodie">
+  <h3>Premium Hoodie</h3>
+  <span>PKR 6,499</span><br><br>
+  <select class="size" style="padding:10px;border-radius:8px;margin-bottom:10px;">
+    <option value="S">Size S</option>
+    <option value="M">Size M</option>
+    <option value="L">Size L</option>
+    <option value="XL">Size XL</option>
+  </select><br>
+  <a href="#" class="btn order-btn" data-product="Premium Hoodie">Order on WhatsApp</a>
+</div>
+
+<div class="product">
+  <img src="https://via.placeholder.com/400x500" alt="Signature Jacket">
+  <h3>Signature Jacket</h3>
+  <span>PKR 9,999</span><br><br>
+  <select class="size" style="padding:10px;border-radius:8px;margin-bottom:10px;">
+    <option value="S">Size S</option>
+    <option value="M">Size M</option>
+    <option value="L">Size L</option>
+    <option value="XL">Size XL</option>
+  </select><br>
+  <a href="#" class="btn order-btn" data-product="Signature Jacket">Order on WhatsApp</a>
+</div>
+
+<div class="product">
+  <img src="https://via.placeholder.com/400x500" alt="Classic Shirt">
+  <h3>Classic Shirt</h3>
+  <span>PKR 4,499</span><br><br>
+  <select class="size" style="padding:10px;border-radius:8px;margin-bottom:10px;">
+    <option value="S">Size S</option>
+    <option value="M">Size M</option>
+    <option value="L">Size L</option>
+    <option value="XL">Size XL</option>
+  </select><br>
+  <a href="#" class="btn order-btn" data-product="Classic Shirt">Order on WhatsApp</a>
+</div>
+
+<div class="product">
+  <img src="https://via.placeholder.com/400x500" alt="Summer Dress">
+  <h3>Summer Dress</h3>
+  <span>PKR 5,299</span><br><br>
+  <select class="size" style="padding:10px;border-radius:8px;margin-bottom:10px;">
+    <option value="S">Size S</option>
+    <option value="M">Size M</option>
+    <option value="L">Size L</option>
+    <option value="XL">Size XL</option>
+  </select><br>
+  <a href="#" class="btn order-btn" data-product="Summer Dress">Order on WhatsApp</a>
+</div>
+
+  </div>
+</section><section id="about">
+  <h2>About Wereluxe</h2>
+  <p class="about">Wereluxe is a modern clothing brand focused on premium quality, clean design and timeless style. Our mission is to bring luxury fashion that feels effortless and wearable every day.</p>
+</section><section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@wereluxe.com</p>
+  <p>Instagram: @wereluxe</p>
+</section><footer>
+  <p>© 2026 <span>Wereluxe</span>. All Rights Reserved.</p>
+</footer><a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  document.querySelectorAll('.order-btn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      const product = btn.getAttribute('data-product');
+      const size = btn.previousElementSibling.value;
+      const number = '923245638264'; // Replace with your WhatsApp number
+      const message = encodeURIComponent(`Hello Wereluxe! I want to order the ${product} - Size: ${size}`);
+      window.open(`https://wa.me/${number}?text=${message}`, '_blank');
+    });
+  });
+</script></body>
+</html>
